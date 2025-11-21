@@ -27,6 +27,38 @@ class AppRoute extends PageRouteInfo<void> {
 }
 
 /// generated route for
+/// [BookmarksScreen]
+class BookmarksRoute extends PageRouteInfo<void> {
+  const BookmarksRoute({List<PageRouteInfo>? children})
+    : super(BookmarksRoute.name, initialChildren: children);
+
+  static const String name = 'BookmarksRoute';
+
+  static PageInfo page = PageInfo(
+    name,
+    builder: (data) {
+      return const BookmarksScreen();
+    },
+  );
+}
+
+/// generated route for
+/// [ChatScreen]
+class ChatRoute extends PageRouteInfo<void> {
+  const ChatRoute({List<PageRouteInfo>? children})
+    : super(ChatRoute.name, initialChildren: children);
+
+  static const String name = 'ChatRoute';
+
+  static PageInfo page = PageInfo(
+    name,
+    builder: (data) {
+      return const ChatScreen();
+    },
+  );
+}
+
+/// generated route for
 /// [CommunityScreen]
 class CommunityRoute extends PageRouteInfo<void> {
   const CommunityRoute({List<PageRouteInfo>? children})
@@ -59,6 +91,22 @@ class HomeRoute extends PageRouteInfo<void> {
 }
 
 /// generated route for
+/// [ListsScreen]
+class ListsRoute extends PageRouteInfo<void> {
+  const ListsRoute({List<PageRouteInfo>? children})
+    : super(ListsRoute.name, initialChildren: children);
+
+  static const String name = 'ListsRoute';
+
+  static PageInfo page = PageInfo(
+    name,
+    builder: (data) {
+      return const ListsScreen();
+    },
+  );
+}
+
+/// generated route for
 /// [MessagesScreen]
 class MessagesRoute extends PageRouteInfo<void> {
   const MessagesRoute({List<PageRouteInfo>? children})
@@ -70,6 +118,22 @@ class MessagesRoute extends PageRouteInfo<void> {
     name,
     builder: (data) {
       return const MessagesScreen();
+    },
+  );
+}
+
+/// generated route for
+/// [MonitisationScreen]
+class MonitisationRoute extends PageRouteInfo<void> {
+  const MonitisationRoute({List<PageRouteInfo>? children})
+    : super(MonitisationRoute.name, initialChildren: children);
+
+  static const String name = 'MonitisationRoute';
+
+  static PageInfo page = PageInfo(
+    name,
+    builder: (data) {
+      return const MonitisationScreen();
     },
   );
 }
@@ -136,6 +200,22 @@ class PostRouteArgs {
 
   @override
   int get hashCode => key.hashCode ^ id.hashCode;
+}
+
+/// generated route for
+/// [PremiumScreen]
+class PremiumRoute extends PageRouteInfo<void> {
+  const PremiumRoute({List<PageRouteInfo>? children})
+    : super(PremiumRoute.name, initialChildren: children);
+
+  static const String name = 'PremiumRoute';
+
+  static PageInfo page = PageInfo(
+    name,
+    builder: (data) {
+      return const PremiumScreen();
+    },
+  );
 }
 
 /// generated route for
@@ -230,6 +310,22 @@ class SettingsRoute extends PageRouteInfo<void> {
     name,
     builder: (data) {
       return const SettingsScreen();
+    },
+  );
+}
+
+/// generated route for
+/// [SpacesScreen]
+class SpacesRoute extends PageRouteInfo<void> {
+  const SpacesRoute({List<PageRouteInfo>? children})
+    : super(SpacesRoute.name, initialChildren: children);
+
+  static const String name = 'SpacesRoute';
+
+  static PageInfo page = PageInfo(
+    name,
+    builder: (data) {
+      return const SpacesScreen();
     },
   );
 }

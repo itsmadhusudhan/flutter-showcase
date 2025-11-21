@@ -11,6 +11,7 @@ abstract final class AppTheme {
       ),
       elevation: 0,
       scrolledUnderElevation: 0,
+      centerTitle: false,
     ),
     floatingActionButtonTheme: FloatingActionButtonThemeData(
       shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(50)),

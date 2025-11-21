@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:auto_route/auto_route.dart';
 
+import 'package:x/navigation/app_router.dart';
+
 @RoutePage()
 class TimelineFeedScreen extends StatelessWidget {
   final String id;
@@ -11,7 +13,12 @@ class TimelineFeedScreen extends StatelessWidget {
     return ListView.builder(
       padding: EdgeInsets.all(0),
       itemBuilder: (context, index) {
-        return ListTile(title: Text('$id Item $index'));
+        return ListTile(
+          title: Text('$id Item $index'),
+          onTap: () {
+            context.navigateTo(PostRoute(id: '$id Item $index'));
+          },
+        );
       },
       itemCount: 100,
     );

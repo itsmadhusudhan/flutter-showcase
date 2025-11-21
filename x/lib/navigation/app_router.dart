@@ -30,5 +30,11 @@ class AppRouter extends RootStackRouter {
     AutoRoute(page: ProfileRoute.page, path: "/profile/:id"),
     AutoRoute(page: PostRoute.page, path: "/post/:id"),
     AutoRoute(page: SearchResultRoute.page, path: "/search-results"),
+    AutoRoute(page: PremiumRoute.page, path: "/premium"),
+    AutoRoute(page: ChatRoute.page, path: "/chat"),
+    AutoRoute(page: BookmarksRoute.page, path: "/bookmarks"),
+    AutoRoute(page: ListsRoute.page, path: "/lists"),
+    AutoRoute(page: SpacesRoute.page, path: "/spaces"),
+    AutoRoute(page: MonitisationRoute.page, path: "/monitisation"),
   ];
 }

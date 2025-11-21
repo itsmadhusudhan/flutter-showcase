@@ -8,6 +8,9 @@ class PostScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(body: Center(child: Text('Post Screen')));
+    return Scaffold(
+      appBar: AppBar(title: Text('Post'), titleSpacing: 0),
+      body: Center(child: Text(id)),
+    );
   }
 }
