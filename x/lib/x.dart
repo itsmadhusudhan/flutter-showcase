@@ -1,16 +1,21 @@
 import 'package:flutter/material.dart';
+import 'package:x/navigation/app_router.dart';
+
+import 'package:x/styles/theme.dart';
 
 class X extends StatelessWidget {
-  const X({super.key});
+  final appRouter = AppRouter();
+
+  X({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return MaterialApp.router(
+      routerConfig: appRouter.config(),
       title: 'X',
-      theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.black),
-      ),
-      home: Scaffold(body: Center(child: Text('Welcome to X Platform'))),
+      theme: AppTheme.light,
+      darkTheme: AppTheme.dark,
+      themeMode: ThemeMode.system,
     );
   }
 }
